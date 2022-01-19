@@ -38,9 +38,9 @@ export default function MonitorCard({ key, monitor, data }) {
             )
             :
             (
-              <span>
+              <a href={monitor.url} target="_blank">
                 <div className="text-xl">{monitor.name}</div>
-              </span>
+              </a>
             )
           }
 
