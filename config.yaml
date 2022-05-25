@@ -17,17 +17,36 @@ settings:
 monitors:
   - id: lbenicio-main # unique identifier
     name: lbenicio.dev
-    description: 'You write code. They handle the rest.' # default=empty
+    description: 'Personal website.' # default=empty
     url: 'https://lbenicio.dev/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
+    followRedirect: true # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
 
   - id: lbenicio-blog
     name: blog.lbenicio.dev
-    description: 'Built for anything connected to the Internet.'
+    description: 'Personal blog.'
     url: 'https://blog.lbenicio.dev'
     method: GET
     expectStatus: 200
+    followRedirect: true # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
+    
+  - id: lbenicio-paste
+    name: paste.lbenicio.dev
+    description: 'Personal Gist server.'
+    url: 'https://paste.lbenicio.dev'
+    method: GET
+    expectStatus: 200
+    followRedirect: true # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
+
+  - id: lbenicio-pgp
+    name: pgp.lbenicio.dev
+    description: 'Pgp key server.'
+    url: 'https://blog.lbenicio.dev'
+    method: GET
+    expectStatus: 200
+    followRedirect: true # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
