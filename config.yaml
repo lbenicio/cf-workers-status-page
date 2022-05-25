@@ -45,7 +45,7 @@ monitors:
   - id: lbenicio-pgp
     name: pgp.lbenicio.dev
     description: 'Pgp key server.'
-    url: 'https://blog.lbenicio.dev'
+    url: 'https://pgp.lbenicio.dev'
     method: GET
     expectStatus: 200
     followRedirect: true # should fetch follow redirects, default=false
