@@ -42,7 +42,16 @@ monitors:
     followRedirect: true # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
 
-  - id: lbenicio-pgp
+  - id: lbenicio-link
+    name: link.lbenicio.dev
+    description: 'URL shortner service.'
+    url: 'https://link.lbenicio.dev'
+    method: GET
+    expectStatus: 200
+    followRedirect: true # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
+
+   - id: lbenicio-pgp
     name: pgp.lbenicio.dev
     description: 'Pgp key server.'
     url: 'https://pgp.lbenicio.dev'
