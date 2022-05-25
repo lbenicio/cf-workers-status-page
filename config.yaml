@@ -51,7 +51,7 @@ monitors:
     followRedirect: true # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
 
-   - id: lbenicio-pgp
+  - id: lbenicio-pgp
     name: pgp.lbenicio.dev
     description: 'Pgp key server.'
     url: 'https://pgp.lbenicio.dev'
