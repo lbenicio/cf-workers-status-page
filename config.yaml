@@ -59,3 +59,12 @@ monitors:
     expectStatus: 200
     followRedirect: true # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
+
+  - id: lbenicio-shortcuts
+    name: shortcuts.lbenicio.dev
+    description: 'iOS shortcuts repository.'
+    url: 'https://shortcuts.lbenicio.dev'
+    method: GET
+    expectStatus: 200
+    followRedirect: true # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
