@@ -30,8 +30,8 @@ monitors:
     url: 'https://blog.lbenicio.dev'
     method: GET
     expectStatus: 200
-    followRedirect: true # should fetch follow redirects, default=false
-    linkable: true # allows the title to be a link, default=true
+    followRedirect: true
+    linkable: true
     
   - id: lbenicio-paste
     name: paste.lbenicio.dev
@@ -39,8 +39,8 @@ monitors:
     url: 'https://paste.lbenicio.dev'
     method: GET
     expectStatus: 200
-    followRedirect: true # should fetch follow redirects, default=false
-    linkable: true # allows the title to be a link, default=true
+    followRedirect: true
+    linkable: true
 
   - id: lbenicio-link
     name: link.lbenicio.dev
@@ -48,8 +48,8 @@ monitors:
     url: 'https://link.lbenicio.dev'
     method: GET
     expectStatus: 200
-    followRedirect: true # should fetch follow redirects, default=false
-    linkable: true # allows the title to be a link, default=true
+    followRedirect: true
+    linkable: true
 
   - id: lbenicio-pgp
     name: pgp.lbenicio.dev
@@ -57,8 +57,8 @@ monitors:
     url: 'https://pgp.lbenicio.dev'
     method: GET
     expectStatus: 200
-    followRedirect: true # should fetch follow redirects, default=false
-    linkable: true # allows the title to be a link, default=true
+    followRedirect: true
+    linkable: true
 
   - id: lbenicio-shortcuts
     name: shortcuts.lbenicio.dev
@@ -66,5 +66,5 @@ monitors:
     url: 'https://shortcuts.lbenicio.dev'
     method: GET
     expectStatus: 200
-    followRedirect: true # should fetch follow redirects, default=false
-    linkable: true # allows the title to be a link, default=true
+    followRedirect: true
+    linkable: true
