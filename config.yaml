@@ -68,3 +68,11 @@ monitors:
     expectStatus: 200
     followRedirect: true
     linkable: true
+  - id: lbenicio-publications
+    name: publications.lbenicio.dev
+    description: 'publications repository.'
+    url: 'https://publications.lbenicio.dev'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: true
