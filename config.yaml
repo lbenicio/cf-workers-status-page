@@ -60,6 +60,15 @@ monitors:
     followRedirect: true
     linkable: true
 
+  - id: lbenicio-socials
+    name: socials.lbenicio.dev
+    description: 'socials links repository.'
+    url: 'https://socials.lbenicio.dev'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: true
+
   - id: lbenicio-shortcuts
     name: shortcuts.lbenicio.dev
     description: 'iOS shortcuts repository.'
@@ -68,6 +77,7 @@ monitors:
     expectStatus: 200
     followRedirect: true
     linkable: true
+
   - id: lbenicio-publications
     name: publications.lbenicio.dev
     description: 'publications repository.'
