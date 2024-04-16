@@ -69,15 +69,6 @@ monitors:
     followRedirect: true
     linkable: true
 
-  - id: lbenicio-shortcuts
-    name: shortcuts.lbenicio.dev
-    description: 'iOS shortcuts repository.'
-    url: 'https://shortcuts.lbenicio.dev'
-    method: GET
-    expectStatus: 200
-    followRedirect: true
-    linkable: true
-
   - id: lbenicio-publications
     name: publications.lbenicio.dev
     description: 'publications repository.'
