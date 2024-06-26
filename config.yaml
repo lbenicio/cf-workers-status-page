@@ -77,3 +77,12 @@ monitors:
     expectStatus: 200
     followRedirect: true
     linkable: true
+
+  - id: lbenicio-public
+    name: public.lbenicio.dev
+    description: 'public repository.'
+    url: 'https://public.lbenicio.dev'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: true
