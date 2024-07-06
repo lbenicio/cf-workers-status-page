@@ -32,15 +32,6 @@ monitors:
     expectStatus: 200
     followRedirect: true
     linkable: true
-    
-  - id: lbenicio-paste
-    name: paste.lbenicio.dev
-    description: 'Personal Gist server.'
-    url: 'https://paste.lbenicio.dev'
-    method: GET
-    expectStatus: 200
-    followRedirect: true
-    linkable: true
 
   - id: lbenicio-link
     name: link.lbenicio.dev
@@ -64,15 +55,6 @@ monitors:
     name: socials.lbenicio.dev
     description: 'socials links repository.'
     url: 'https://socials.lbenicio.dev'
-    method: GET
-    expectStatus: 200
-    followRedirect: true
-    linkable: true
-
-  - id: lbenicio-publications
-    name: publications.lbenicio.dev
-    description: 'publications repository.'
-    url: 'https://publications.lbenicio.dev'
     method: GET
     expectStatus: 200
     followRedirect: true
