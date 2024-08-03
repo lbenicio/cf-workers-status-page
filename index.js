@@ -12,7 +12,7 @@ const DEBUG = false
 
 addEventListener('fetch', (event) => {
   try {
-    if (request.method === 'HEAD' || request.method === 'OPTIONS') {
+    if (event.request.method === 'HEAD' || event.request.method === 'OPTIONS') {
       return handleOptions(event.request)
     } else {
       event.respondWith(
