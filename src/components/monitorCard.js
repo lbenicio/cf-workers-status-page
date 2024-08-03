@@ -1,6 +1,4 @@
-const fs = require('fs')
-const yaml = require('js-yaml')
-const config = yaml.load(fs.readFileSync('../../config.yaml', 'utf8'))
+import config from '../../config.yaml'
 import MonitorStatusLabel from './monitorStatusLabel'
 import MonitorHistogram from './monitorHistogram'
 

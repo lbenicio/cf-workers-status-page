@@ -1,6 +1,4 @@
-const fs = require('fs')
-const yaml = require('js-yaml')
-const config = yaml.load(fs.readFileSync('../../config.yaml', 'utf8'))
+import config from '../../config.yaml'
 
 const classes = {
   gray: 'bg-gray-200 text-gray-800 dark:bg-gray-800 dark:text-gray-200',
