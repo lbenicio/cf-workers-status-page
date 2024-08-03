@@ -24,8 +24,8 @@
   "devDependencies": {
     "autoprefixer": "^10.4.19",
     "flareact": "github:flareact/flareact#v2",
-    "node-fetch": "^2.6.1",
-    "postcss": "^8.2.13",
+    "node-fetch": "^2.6.7",
+    "postcss": "^8.4.31",
     "postcss-cli": "^8.3.0",
     "prettier": "^2.2.0",
     "tailwindcss": "^2.0.1",
