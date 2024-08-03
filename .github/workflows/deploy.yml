@@ -14,9 +14,9 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v4
         with:
-          node-version: 14
+          node-version: 16.13.0
       - run: yarn install
       - run: yarn build
         env:
