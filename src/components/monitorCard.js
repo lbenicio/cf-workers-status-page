@@ -1,4 +1,6 @@
-import config from '../../config.yaml'
+const fs = require('fs')
+const yaml = require('js-yaml')
+const config = yaml.load(fs.readFileSync('../../config.yaml', 'utf8'))
 import MonitorStatusLabel from './monitorStatusLabel'
 import MonitorHistogram from './monitorHistogram'
 
@@ -30,20 +32,15 @@ export default function MonitorCard({ key, monitor, data }) {
               </div>
             </div>
           )}
-          {(monitor.linkable === true || monitor.linkable === undefined) ?
-            (
-              <a href={monitor.url} target="_blank">
-                <div className="text-xl">{monitor.name}</div>
-              </a>
-            )
-            :
-            (
-              <a href={monitor.url} target="_blank">
-                <div className="text-xl">{monitor.name}</div>
-              </a>
-            )
-          }
-
+          {monitor.linkable === true || monitor.linkable === undefined ? (
+            <a href={monitor.url} target="_blank">
+              <div className="text-xl">{monitor.name}</div>
+            </a>
+          ) : (
+            <a href={monitor.url} target="_blank">
+              <div className="text-xl">{monitor.name}</div>
+            </a>
+          )}
         </div>
         <MonitorStatusLabel kvMonitor={data} />
       </div>

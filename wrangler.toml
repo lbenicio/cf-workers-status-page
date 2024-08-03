@@ -5,7 +5,7 @@ workers_dev = true
 #webpack_config = "node_modules/flareact/webpack"
 compatibility_date = "2021-07-23"
 main = "index.js"
-
+node_compat = true
 [triggers]
 crons = ["*/2 * * * *"]
 

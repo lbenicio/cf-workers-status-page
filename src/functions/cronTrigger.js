@@ -1,5 +1,3 @@
-import config from '../../config.yaml'
-
 import {
   notifySlack,
   notifyTelegram,
@@ -8,6 +6,9 @@ import {
   setKVMonitors,
   notifyDiscord,
 } from './helpers'
+const fs = require('fs')
+const yaml = require('js-yaml')
+const config = yaml.load(fs.readFileSync('../../config.yaml', 'utf8'))
 
 function getDate() {
   return new Date().toISOString().split('T')[0]
@@ -142,7 +143,10 @@ export async function processCronTrigger(event) {
       monitorsState.lastUpdate.allOperational = false
 
       // Increment failed checks on status change or first fail of the day (maybe call it .incidents instead?)
-      if (monitorStatusChanged || monitorsState.monitors[monitor.id].checks[checkDay].fails == 0) {
+      if (
+        monitorStatusChanged ||
+        monitorsState.monitors[monitor.id].checks[checkDay].fails == 0
+      ) {
         monitorsState.monitors[monitor.id].checks[checkDay].fails++
       }
     }

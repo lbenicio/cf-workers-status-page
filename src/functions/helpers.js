@@ -1,4 +1,6 @@
-import config from '../../config.yaml'
+const fs = require('fs')
+const yaml = require('js-yaml')
+const config = yaml.load(fs.readFileSync('../../config.yaml', 'utf8'))
 import { useEffect, useState } from 'react'
 
 const kvDataKey = 'monitors_data_v1_1'
@@ -27,7 +29,9 @@ export async function notifySlack(monitor, operational) {
   const payload = {
     attachments: [
       {
-        fallback: `Monitor ${monitor.name} changed status to ${getOperationalLabel(operational)}`,
+        fallback: `Monitor ${
+          monitor.name
+        } changed status to ${getOperationalLabel(operational)}`,
         color: operational ? '#36a64f' : '#f2c744',
         blocks: [
           {

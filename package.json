@@ -6,7 +6,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "dev": "flareact dev",
+    "dev": "flareact dev --config flareact.config.js",
     "build": "yarn css && flareact build",
     "deploy": "yarn build && flareact publish",
     "kv-gc": "node ./src/cli/gcMonitors.js",
@@ -14,14 +14,16 @@
     "css": "postcss public/tailwind.css -o public/style.css"
   },
   "dependencies": {
-    "flareact": "^1.5.0",
+    "fs": "^0.0.1-security",
+    "js-yaml": "^4.1.0",
     "laco": "^1.2.1",
     "laco-react": "^1.1.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
+    "flareact": "github:flareact/flareact#v2",
     "node-fetch": "^2.6.1",
     "postcss": "^8.2.13",
     "postcss-cli": "^8.3.0",

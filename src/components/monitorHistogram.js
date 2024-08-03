@@ -1,5 +1,7 @@
 import React from 'react'
-import config from '../../config.yaml'
+const fs = require('fs')
+const yaml = require('js-yaml')
+const config = yaml.load(fs.readFileSync('../../config.yaml', 'utf8'))
 import MonitorDayAverage from './monitorDayAverage'
 
 export default function MonitorHistogram({ monitorId, kvMonitor }) {
