@@ -1,3 +1,5 @@
+import config from '../../config.yaml'
+
 import {
   notifySlack,
   notifyTelegram,
@@ -6,9 +8,6 @@ import {
   setKVMonitors,
   notifyDiscord,
 } from './helpers'
-const fs = require('fs')
-const yaml = require('js-yaml')
-const config = yaml.load(fs.readFileSync('../../config.yaml', 'utf8'))
 
 function getDate() {
   return new Date().toISOString().split('T')[0]
