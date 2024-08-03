@@ -14,19 +14,19 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v1
         with:
-          node-version: 16.13.0
+          node-version: 12
       - run: yarn install
       - run: yarn build
         env:
           NODE_ENV: production
       - name: Publish
-        uses: cloudflare/wrangler-action@v3
+        uses: cloudflare/wrangler-action@1.3.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           preCommands: |
-
+            wrangler kv:namespace create KV_STATUS_PAGE || true
             export KV_NAMESPACE_ID=$(npx @cloudflare/wrangler@1 kv:namespace list 2> >(tee stderr.log >&2) | head -1 | node -pe "JSON.parse(fs.readFileSync('/dev/stdin').toString()).find(kv => kv.title.includes('KV_STATUS_PAGE')).id")
             echo "[env.production]" >> wrangler.toml
             echo "kv_namespaces = [{binding=\"KV_STATUS_PAGE\", id=\"${KV_NAMESPACE_ID}\"}]" >> wrangler.toml
