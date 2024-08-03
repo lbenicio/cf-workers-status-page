@@ -1,5 +1,7 @@
 #!/bin/bash
 
+npm install -g wrangler
+
 export KV_NAMESPACE_ID=$(wrangler kv:namespace list 2> >(tee stderr.log >&2) | node -pe "JSON.parse(fs.readFileSync('/dev/stdin').toString()).find(kv => kv.title.includes('KV_STATUS_PAGE')).id")
 
 
