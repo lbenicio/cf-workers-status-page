@@ -17,6 +17,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 21.1.0
+      - run: sudo apt-get install g++ build-essential
       - run: sudo npm install -g node-gyp
       - run: yarn install
       - run: yarn build
