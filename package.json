@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
-    "flareact": "github:flareact/flareact#v2",
+    "flareact": "^1.5.0",
     "node-fetch": "^2.6.1",
     "postcss": "^8.2.13",
     "postcss-cli": "^8.3.0",

@@ -3258,9 +3258,10 @@
     "micromatch" "^3.0.4"
     "resolve-dir" "^1.0.1"
 
-"flareact@github:flareact/flareact#v2":
-  "resolved" "git+ssh://git@github.com/flareact/flareact.git#bd4149945d9a7da9e4f5d91f1ab2deeafa91024b"
-  "version" "0.0.0-development"
+"flareact@^1.5.0":
+  "integrity" "sha512-YmIV/gNlFmxe4SNFMlASEXGcMFKkpa+2K0XvIj+kEtcxZU7CsG5Y32G3EjaytkbQnsErBvoBh7XrOY79v/PDig=="
+  "resolved" "https://registry.npmjs.org/flareact/-/flareact-1.5.0.tgz"
+  "version" "1.5.0"
   dependencies:
     "@babel/core" "^7.11.0"
     "@babel/plugin-transform-runtime" "^7.11.0"
