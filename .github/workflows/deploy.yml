@@ -22,7 +22,7 @@ jobs:
         env:
           NODE_ENV: production
       - name: Publish
-        uses: cloudflare/wrangler-action@3
+        uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           preCommands: |
