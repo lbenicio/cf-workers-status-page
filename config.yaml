@@ -1,5 +1,5 @@
 settings:
-  title: 'Status Page'
+  title: 'Leonardo Benicio Status Page'
   url: 'https://status.lbenicio.dev' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
@@ -32,15 +32,6 @@ monitors:
     expectStatus: 200
     followRedirect: true
     linkable: true
-    
-  - id: lbenicio-paste
-    name: paste.lbenicio.dev
-    description: 'Personal Gist server.'
-    url: 'https://paste.lbenicio.dev'
-    method: GET
-    expectStatus: 200
-    followRedirect: true
-    linkable: true
 
   - id: lbenicio-link
     name: link.lbenicio.dev
@@ -69,19 +60,37 @@ monitors:
     followRedirect: true
     linkable: true
 
-  - id: lbenicio-shortcuts
-    name: shortcuts.lbenicio.dev
-    description: 'iOS shortcuts repository.'
-    url: 'https://shortcuts.lbenicio.dev'
+  - id: lbenicio-newsletter
+    name: newsletter.lbenicio.dev
+    description: 'newsletter service.'
+    url: 'https://newsletter.lbenicio.dev'
     method: GET
     expectStatus: 200
     followRedirect: true
     linkable: true
 
-  - id: lbenicio-publications
-    name: publications.lbenicio.dev
-    description: 'publications repository.'
-    url: 'https://publications.lbenicio.dev'
+  - id: lbenicio-contact
+    name: contact.lbenicio.dev
+    description: 'contact form.'
+    url: 'https://contact.lbenicio.dev'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: true
+
+  - id: lbenicio-paste
+    name: paste.lbenicio.dev
+    description: 'URL shortner service.'
+    url: 'https://paste.lbenicio.dev'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: true
+
+  - id: lbenicio-public
+    name: public.lbenicio.dev
+    description: 'public repository.'
+    url: 'https://public.lbenicio.dev'
     method: GET
     expectStatus: 200
     followRedirect: true
