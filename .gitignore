@@ -134,3 +134,4 @@ worker/
 out/
 package-lock.json
 public/style.css
+wrangler.toml
