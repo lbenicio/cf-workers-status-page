@@ -60,6 +60,33 @@ monitors:
     followRedirect: true
     linkable: true
 
+  - id: lbenicio-newsletter
+    name: newsletter.lbenicio.dev
+    description: 'newsletter service.'
+    url: 'https://newsletter.lbenicio.dev'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: true
+
+  - id: lbenicio-contact
+    name: contact.lbenicio.dev
+    description: 'contact form.'
+    url: 'https://contact.lbenicio.dev'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: true
+
+  - id: lbenicio-paste
+    name: paste.lbenicio.dev
+    description: 'URL shortner service.'
+    url: 'https://paste.lbenicio.dev'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: true
+
   - id: lbenicio-public
     name: public.lbenicio.dev
     description: 'public repository.'
